@@ -10,15 +10,12 @@ require("solidity-coverage");
 module.exports = {
   solidity: "0.8.10",
   networks: {
-    polygonAmoy: {
-      url: process.env.POLYGON_AMOY_RPC_URL,
+    mumbai: {
+      url: process.env.POLYGON_MUMBAI,
       accounts: [process.env.PRIVATE_KEY],
-      chainId: 80002,
     },
   },
   etherscan: {
-    apiKey: {
-      polygonAmoy: process.env.POLYGONSCAN_API_KEY,
-    },
+    apiKey: process.env.POLYGONSCAN_API_KEY,
   },
 };
